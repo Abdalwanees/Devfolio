@@ -1,0 +1,737 @@
+:root {
+    --main-color: #0078FF;
+    --bg-color: #e6e6e6;
+    --bg-nav: rgba(0, 0, 0, 0.856);
+    --info-color: #F8F8F8;
+}
+
+.info-color {
+    background-color: var(--info-color);
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.bg-color {
+    background-color: var(--bg-color)
+}
+
+.bg-nav {
+    background-color: var(--bg-nav);
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #0078FF;
+    margin: 10px 0px;
+    border-radius: 30px;
+}
+.scrol-t{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background-color: #002753;
+}
+.scrol-t a{
+    color: #fff;
+}
+.scrol-t:hover{
+    background-color: #36587e;
+}
+
+/* header */
+header {
+    height: 100vh;
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+a{
+    text-decoration: none;
+}
+
+/* header -->nanbar */
+header .navbar {
+    background-color: rgba(0, 0, 0, 0.685);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+.dropend:hover > .dropdown-menu,
+.dropdown:hover > .dropdown-menu{
+    display: block;
+}
+.dropend:hover > .dropdown-menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.dropdown-item:hover{
+    color: var(--main-color);
+}
+.nav-menu{
+    color: black;
+}
+.nav-menu:hover{
+    color: var(--main-color);
+}
+
+header .navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+header .navbar .navbar-nav .nav-link.active,
+header .navbar .navbar-nav .nav-link {
+    position: relative;
+}
+
+header .navbar .navbar-nav .nav-link.active::after,
+header .navbar .navbar-nav .nav-link:focus::after,
+header .navbar .navbar-nav .nav-link:hover::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: -4px;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+    animation: link-underline 1s forwards;
+}
+
+@keyframes link-underline {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+
+}
+
+/* header-->home */
+header .home {
+    height: 100%;
+
+}
+
+header .home .container h1 {
+    font-size: 4rem;
+
+}
+
+header .home .container p {
+    font-size: 3rem;
+}
+
+header .home .container p::after {
+    content: "|";
+    animation: typing 15s infinite;
+}
+
+/* Designer| Developer| Photograph| Freelancer| */
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+
+    1% {
+        content: "D|";
+    }
+
+    2% {
+        content: "De|";
+    }
+
+    3% {
+        content: "Des|";
+    }
+
+    4% {
+        content: "Desi|";
+    }
+
+    5% {
+        content: "Desig|";
+    }
+
+    6% {
+        content: "Design|";
+    }
+
+    7% {
+        content: "Designe|";
+    }
+
+    8% {
+        content: "Designer|";
+    }
+
+    9% {
+        content: "Designer";
+    }
+
+    10% {
+        content: "Designer|";
+    }
+
+    11% {
+        content: "Designer";
+    }
+
+    12% {
+        content: "Designer|";
+    }
+
+    13% {
+        content: "Designe|";
+    }
+
+    14% {
+        content: "Design|";
+    }
+
+    15% {
+        content: "Desig|";
+    }
+
+    16% {
+        content: "Desi|";
+    }
+
+    17% {
+        content: "Des|";
+    }
+
+    18% {
+        content: "Dev|";
+    }
+
+    19% {
+        content: "Deve|";
+    }
+
+    20% {
+        content: "Devel|";
+    }
+
+    21% {
+        content: "Develo|";
+    }
+
+    22% {
+        content: "Develop|";
+    }
+
+    23% {
+        content: "Develope|";
+    }
+
+    24% {
+        content: "Developer|";
+    }
+
+    25% {
+        content: "Developer";
+    }
+
+    26% {
+        content: "Developer|";
+    }
+
+    27% {
+        content: "Developer";
+    }
+
+    28% {
+        content: "Developer|";
+    }
+
+    29% {
+        content: "Develope|";
+    }
+
+    30% {
+        content: "Develop|";
+    }
+
+    31% {
+        content: "Develo|";
+    }
+
+    32% {
+        content: "Devel|";
+    }
+
+    33% {
+        content: "Deve|";
+    }
+
+    34% {
+        content: "Deve|";
+    }
+
+    35% {
+        content: "Dev|";
+    }
+
+    36% {
+        content: "De|";
+    }
+
+    37% {
+        content: "D|";
+    }
+
+    38% {
+        content: "|";
+    }
+
+    39% {
+        content: "|";
+    }
+
+    41% {
+        content: "|";
+    }
+
+    42% {
+        content: "P|";
+    }
+
+    43% {
+        content: "Ph|";
+    }
+
+    44% {
+        content: "Pho|";
+    }
+
+    45% {
+        content: "Phot|";
+    }
+
+    46% {
+        content: "Photo|";
+    }
+
+    47% {
+        content: "Photog|";
+    }
+
+    48% {
+        content: "Photogr|";
+    }
+
+    49% {
+        content: "Photogra|";
+    }
+
+    50% {
+        content: "Photograp|";
+    }
+
+    51% {
+        content: "Photograph|";
+    }
+
+    52% {
+        content: "Photographe|";
+    }
+
+    53% {
+        content: "Photographer|";
+    }
+
+    54% {
+        content: "Photographer";
+    }
+
+    55% {
+        content: "Photographer|";
+    }
+
+    56% {
+        content: "Photographer";
+    }
+
+    57% {
+        content: "Photographer|";
+    }
+
+    58% {
+        content: "Photographe|";
+    }
+
+    59% {
+        content: "Photograph|";
+    }
+
+    60% {
+        content: "Photograp|";
+    }
+
+    61% {
+        content: "Photogra|";
+    }
+
+    62% {
+        content: "Photogr|";
+    }
+
+    63% {
+        content: "Photog|";
+    }
+
+    64% {
+        content: "Photo|";
+    }
+
+    65% {
+        content: "Phot|";
+    }
+
+    66% {
+        content: "Pho|";
+    }
+
+    67% {
+        content: "Ph|";
+    }
+
+    68% {
+        content: "P|";
+    }
+
+    69% {
+        content: "|";
+    }
+
+    70% {
+        content: "|";
+    }
+
+    71% {
+        content: "|";
+    }
+
+    72% {
+        content: "F|";
+    }
+
+    73% {
+        content: "Fr|";
+    }
+
+    74% {
+        content: "Fre|";
+    }
+
+    75% {
+        content: "Free|";
+    }
+
+    76% {
+        content: "Freel|";
+    }
+
+    77% {
+        content: "Freela|";
+    }
+
+    78% {
+        content: "Freelan|";
+    }
+
+    79% {
+        content: "Freelan|";
+    }
+
+    80% {
+        content: "Freelanc|";
+    }
+
+    81% {
+        content: "Freelance|";
+    }
+
+    82% {
+        content: "Freelancer|";
+    }
+
+    83% {
+        content: "Freelancer";
+    }
+
+    84% {
+        content: "Freelancer|";
+    }
+
+    85% {
+        content: "Freelancer";
+    }
+
+    86% {
+        content: "Freelancer|";
+    }
+
+    87% {
+        content: "Freelancer";
+    }
+
+    88% {
+        content: "Freelancer|";
+    }
+
+    89% {
+        content: "Freelance|";
+    }
+
+    90% {
+        content: "Freelanc|";
+    }
+
+    91% {
+        content: "Freelan|";
+    }
+
+    92% {
+        content: "Freela|";
+    }
+
+    93% {
+        content: "Freel|";
+    }
+
+    94% {
+        content: "Free|";
+    }
+
+    95% {
+        content: "Fre|";
+    }
+
+    96% {
+        content: "Fr|";
+    }
+
+    97% {
+        content: "F|";
+    }
+
+    98% {
+        content: "|";
+    }
+
+    99% {
+        content: "|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+/* about section */
+/* #about .container h3{
+    position: relative;
+    
+}
+#about .container h3::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #0078FF;
+    top: 50px;
+    left: 0;
+} */
+#about .container .underline {
+    width: 100px;
+    height: 3px;
+    background-color: #0078FF;
+    margin: 20px 0px;
+    border-radius: 30px;
+}
+
+/* services */
+
+#services .container .row .s-contant .container .services-icons {
+    width: 120px;
+    height: 120px;
+    border: 10px solid #0078FF;
+}
+
+#services .container .row .s-contant:hover .services-icons {
+    background-color: #0078FF;
+    border-color: #CDE1F8;
+    color: #fff;
+}
+
+/* counter section */
+#counter .bg {
+    background-image: url(../images/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#counter .content {
+    background-image: linear-gradient(#0077ffa6, #0077ffa6);
+}
+
+#counter .content .container .row .container .counter-icons {
+    width: 120px;
+    height: 120px;
+    border: 10px solid #CDE1F8;
+}
+
+/* portofilo section */
+
+#work .container .p-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#work .container .s-contant .img {
+    overflow: hidden;
+}
+
+#work .container .s-contant img {
+    transition: transform 1s;
+}
+
+#work .container .s-contant:hover img {
+    transform: scale(1.2);
+}
+
+/* testimonial section */
+#testimonial .bg {
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#testimonial .bg .content {
+    background-image: linear-gradient(#0077ffa6, #0077ffa6);
+}
+
+#testimonial .bg .content .img {
+    width: 150px;
+    height: 150px;
+}
+
+#testimonial .bg .content .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* blog section */
+#blog a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#blog a:hover {
+    color: var(--main-color);
+
+}
+
+/* contact section */
+#contact .bg {
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#contact .content {
+    background-image: linear-gradient(#0077ffa6, #0077ffa6);
+}
+
+#contact .container .underline {
+    width: 100px;
+    height: 3px;
+    background-color: #0078FF;
+    margin: 20px 0px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+}
+
+#contact .container input {
+    height: 50px;
+}
+
+#contact .container input:focus,
+#contact .container input:hover { 
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+    border-color: var(--main-color);
+}
+
+#contact .container textarea:focus,
+#contact .container textarea:hover {
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+    border-color: var(--main-color);
+}
+
+#contact .container .btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    border: 5px solid var(--main-color);
+    color: #CDE1F8;
+}
+
+#contact .container .btn:hover {
+    border: 5px solid #CDE1F8;
+}
+
+#contact .container .icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+}
+
+#contact .container .icon a {
+    text-decoration: none;
+    color: black;
+}
+
+#contact .container .icon a:hover {
+    color: #fff;
+}
+
+#contact .container .icon i {
+    font-size: 25px;
+}
+
+#contact .container .icon:hover {
+    background-color: var(--main-color);
+    border-color: #CDE1F8;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    background-color: #00438f;
+}
